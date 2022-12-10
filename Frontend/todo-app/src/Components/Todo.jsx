@@ -54,7 +54,7 @@ export default function Todo ( ){
                     <Text fontSize={{base : '16px', md : '17px'}}>{elem.note}</Text>
                     <Flex alignItems='center' gap={'40px'}>
                          <Text color ={elem.status ? 'green' : 'red'}>{elem.status ? "Completed" : "InComplete"}</Text>
-                         <Text onClick={( ) => handleToggleTodo(!elem.status,elem._id)} cursor='pointer' fontSize={{base:'18px'}}
+                         <Text onClick={( ) => handleToggleTodo(!elem.status,elem._id)} cursor='pointer' fontSize={{base:'18px', md :'20px', lg: '22px'}}
                          color ={elem.status ? 'green' : 'red'}
                          >{elem.status ? <BsToggleOff/> : <BsToggleOn/>}</Text>
                     </Flex>
